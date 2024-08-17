@@ -1,0 +1,95 @@
+.box1{
+    height: 50px;
+    width: 250px;
+    border: 2px solid black;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 200px;
+}
+.box1 a{
+    padding: 2px;
+}
+.box1 a span button{
+    margin-left: 15px;
+    margin-top: 4px;
+}
+.box1 a{
+    text-decoration: none;
+}
+.box2{
+    height: 50px;
+    width: 250px;
+    border: 2px solid black;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 200px;
+}
+.box2 a{
+    padding: 2px;
+}
+.box2 a span button{
+    margin-left: 12%;
+    margin-top: 4px;
+}
+.box2 a{
+    text-decoration: none;
+}
+.box3{
+    height: 50px;
+    width: 250px;
+    border: 2px solid black;
+    margin-top: 50px;
+}
+.box3 a{
+    padding: 2px;
+}
+.box3 a span button{
+    margin-left: 15%;
+    margin-top: 4px;
+}
+.box3 a{
+    text-decoration: none;
+}
+.box4{
+    height: 50px;
+    width: 250px;
+    border: 2px solid black;
+    margin-top: 50px;
+}
+.box4 a{
+    padding: 2px;
+}
+.box4 a span button{
+    margin-left: 35%;
+    margin-top: 4px;
+}
+.box4 a{
+    text-decoration: none;
+}
+.imagebox{
+    margin-left: 10%;
+    margin-top: 2%;
+}
+.logobox{
+    border: 2px solid black;
+    padding: 5px;
+    width: 100px;
+    height: 30px;
+}
+.footerbox1{
+    border: 2px solid black;
+    height: 50px;
+    width: 500px;
+}
+.footerbox1 a{
+    margin: 10px;
+}
+.footerbox2{
+    border: 2px solid black;
+    height: 50px;
+    width: 500px;
+}
+.footerbox2 a{
+    margin: 10px;
+    margin-top: 200px;
+}
