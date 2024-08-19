@@ -12,12 +12,11 @@
 </head>
 <body>    
     <!-- header -->
-        <nav class="navbar bg-body-tertiary bg-light rounded" >
+        <nav class="navbar bg-body-tertiary bg-light rounded navbar-fixed-top"  >
             <div class="container-fluid" id="header">
-              <!-- Image and text -->
             <nav class="navbar navbar-light">
                 <a class="navbar-brand" href="#">
-                <img src="logo .png" class="rounded" width="30" height="30" class="d-inline-block align-top" alt="logo">
+                <img src="logo .png" class="rounded" width="50" height="50" class="d-inline-block align-top" alt="logo" style="object-fit: c;">
                 DOWNTHERROR</a>
             </nav>
               <form class="d-flex" role="search">
@@ -29,7 +28,7 @@
     <!-- Header End -->
     <!-- Navigation Bar -->
      <div class="bg-light">
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -37,19 +36,22 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item btn-outline-warning rounded">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="#header">Home</a>
             </li>
             <li class="nav-item btn-outline-warning rounded">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item btn-outline-warning rounded">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#service">Services</a>
             </li>
             <li class="nav-item btn-outline-warning rounded">
-              <a class="nav-link" href="#">Product</a>
+              <a class="nav-link" href="#product">Product</a>
             </li>
             <li class="nav-item btn-outline-warning rounded">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#careers">Career</a>
+            </li>
+            <li class="nav-item btn-outline-warning rounded">
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
           <button class="btn btn-outline-success rounded me-2" type="submit">Signup</button>
@@ -88,7 +90,7 @@
     </div>
     <!-- Home Page End -->     
      <!-- About page -->
-      <div class="container-fluid">
+      <div class="container-fluid" id="about">
         <div class="row">
           <div class="col-lg-7">
             <h3>About</h3>
@@ -103,7 +105,7 @@
       </div>
       <!-- About End -->
       <!-- Services -->     
-       <div class="container-fluid">   
+       <div class="container-fluid" id="service">   
         <h4>Services</h4>    
        <div class="d-flex" id="services" style="margin-left:100px ;">
       <div class="card m-4" style="width: 18rem;">
@@ -131,20 +133,60 @@
      </div>
       <!-- Services End -->
       <!-- Product -->
-       <div class="container-fluid" width="50%">
+       <div class="container-fluid" width="50%" id="product">
         <h4>Our Products</h4>
         <h6>Products we offer for our customers</h6>
         <div class="list-group w-50 m-5">        
-          <a href="#" class="list-group-item list-group-item-action list-group-item-primary" data-bs-toggle="tooltip" data-bs-placement="right" title="Front End">
+          <a href="#frontend" class="list-group-item list-group-item-action list-group-item-primary" data-bs-toggle="tooltip" data-bs-placement="right" title="Front End">
             FrontEnd-Development</button></a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Back End">
+            <div class="card container-fluid" id="frontend">
+              <a href="#product" class="close-card">Close</a>
+              <div class="card-body">
+                <h5 class="card-title">FrontEnd-Development</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">View</a>
+              </div>
+            </div>
+          <a href="#backend" class="list-group-item list-group-item-action list-group-item-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Back End">
             BackEnd-Development</button></a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-danger" data-bs-toggle="tooltip" data-bs-placement="right" title="Web Design">
+            <div class="card container-fluid" id="backend">
+              <a href="#product" class="close-card">Close</a>
+              <div class="card-body">
+                <h5 class="card-title">BackEnd-Development</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">View</a>
+              </div>
+            </div>
+          <a href="#web" class="list-group-item list-group-item-action list-group-item-danger" data-bs-toggle="tooltip" data-bs-placement="right" title="Web Design">
             Web Design</button></a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-success" data-bs-toggle="tooltip" data-bs-placement="right" title="Android Applications">
+            <div class="card" id="web">
+              <a href="#product" class="close-card">Close</a>
+              <div class="card-body">
+                <h5 class="card-title">Web Design</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">View</a>
+              </div>
+            </div>
+          <a href="#mobile" class="list-group-item list-group-item-action list-group-item-success" data-bs-toggle="tooltip" data-bs-placement="right" title="Android Applications">
             Mobile Applications</button></a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-info" data-bs-toggle="tooltip" data-bs-placement="right" title="IoS Applications">
+            <div class="card" id="mobile">
+              <a href="#product" class="close-card">Close</a>
+              <div class="card-body">
+                <h5 class="card-title">Mobile Application</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">View</a>
+              </div>
+            </div>
+          <a href="#ios" class="list-group-item list-group-item-action list-group-item-info" data-bs-toggle="tooltip" data-bs-placement="right" title="IoS Applications">
             IoS Applications</button></a>
+            <div class="card" id="ios">
+              <a href="#product" class="close-card">Close</a>
+              <div class="card-body">
+                <h5 class="card-title">IoS Application</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">View</a>
+              </div>
+            </div>
         </div>
        </div>
        <!-- Product End -->
@@ -153,7 +195,7 @@
           <h4>Our Customers</h4>
           <div class="container-fluid">
           <div class="d-flex m-5" id="review">
-          <div class="card me-5" style="width: 18rem;" >
+          <div class="card me-5 mt-3" style="width: 18rem;" >
             <img src="review1.jpg" class="card-img-top"  width="200px" height="200px" alt="reviewer1">
             <div class="card-body">
               <p class="card-text" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga error sed iste laborum repellat pariatur excepturi nostrum quo debitis culpa. Ab commodi ipsa, facilis assumenda earum quaerat consectetur voluptates? Corrupti!.</p>
@@ -176,7 +218,7 @@
         </div>
         <!-- Review End -->
          <!-- Career -->
-        <div class="container-fluid">
+        <div class="container-fluid" id="careers">
           <h4>Careers</h4>
           <div class="container d-flex" id="career">
           <div class="dropdown">
@@ -280,7 +322,7 @@
          </div>
         <!-- Newsletter End -->
         <!-- Contact -->
-         <div class="container-fluid">
+         <div class="container-fluid" id="contact">
           <h4>Contact</h4>
           <div class="row">
           <div class="col-lg-7">
@@ -355,11 +397,11 @@
           <div class="container">
             <footer class="py-3 my-4">
               <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="#header" class="nav-link px-2 text-muted">Home</a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link px-2 text-muted">About</a></li>
               </ul>
               <ul class="nav justify-content-end border-bottom pb-3 mb-3">
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-dark"><i class="fa-brands fa-linkedin-in"></i></a></li>
