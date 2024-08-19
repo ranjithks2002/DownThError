@@ -80,7 +80,7 @@
 .footerbox1{
     border: 2px solid black;
     height: 50px;
-    width: 500px;
+    width: 100px;
 }
 .footerbox1 a{
     margin: 10px;
@@ -88,7 +88,7 @@
 .footerbox2{
     border: 2px solid black;
     height: 50px;
-    width: 500px;
+    width: 100px;
 }
 .footerbox2 a{
     margin: 10px;
@@ -99,8 +99,7 @@
         display: flex;
         flex-direction: row;
         flex-flow: column;
-    }
-  
+    }  
 }
 @media screen and (max-width:1000px) {
     #review{
@@ -112,7 +111,167 @@
         display: flex;
         flex-direction: row;
         flex-flow: column;
-    }
-  
+    }  
 }
+#card {
+    position: fixed;
+    right: -300px; /* Initially hidden off-screen */
+    top: 20px;
+    width: 500px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    visibility: hidden; /* Initially hidden */
+    opacity: 0;
+}
+#card:target {
+    right: 20px; /* Slide in from the right */
+    visibility: visible;
+    opacity: 1;
+}
+.close-card {
+    display: block;
+    margin-bottom: 10px;
+    text-align: right;
+    color: #333;
+    text-decoration: none;
+}
+.close-card:hover {
+    text-decoration: underline;
+}
+#frontend {
+    position: fixed;
+    right: -300px; /* Initially hidden off-screen */
+    top: 20px;
+    width: 500px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    visibility: hidden; /* Initially hidden */
+    opacity: 0;
+}
+#frontend:target {
+    right: 20px; /* Slide in from the right */
+    visibility: visible;
+    opacity: 1;
+}
+.close-card {
+    display: block;
+    margin-bottom: 10px;
+    text-align: right;
+    color: #333;
+    text-decoration: none;
+}
+.close-card:hover {
+    text-decoration: underline;
+}#backend {
+    position: fixed;
+    right: -300px; /* Initially hidden off-screen */
+    top: 20px;
+    width: 500px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    visibility: hidden; /* Initially hidden */
+    opacity: 0;
+}
+#backend:target {
+    right: 20px; /* Slide in from the right */
+    visibility: visible;
+    opacity: 1;
+}
+.close-card {
+    display: block;
+    margin-bottom: 10px;
+    text-align: right;
+    color: #333;
+    text-decoration: none;
+}
+.close-card:hover {
+    text-decoration: underline;
+}#mobile {
+    position: fixed;
+    right: -300px; /* Initially hidden off-screen */
+    top: 20px;
+    width: 500px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    visibility: hidden; /* Initially hidden */
+    opacity: 0;
+}
+#mobile:target {
+    right: 20px; /* Slide in from the right */
+    visibility: visible;
+    opacity: 1;
+}
+.close-card {
+    display: block;
+    margin-bottom: 10px;
+    text-align: right;
+    color: #333;
+    text-decoration: none;
+}
+.close-card:hover {
+    text-decoration: underline;
+}
+#ios{
+    position: fixed;
+    right: -300px; /* Initially hidden off-screen */
+    top: 20px;
+    width: 500px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    visibility: hidden; /* Initially hidden */
+    opacity: 0;
+}
+#ios:target {
+    right: 20px; /* Slide in from the right */
+    visibility: visible;
+    opacity: 1;
+}
+.close-card {
+    display: block;
+    margin-bottom: 10px;
+    text-align: right;
+    color: #333;
+    text-decoration: none;
+}
+.close-card:hover {
+    text-decoration: underline;
+}
+#web{
+    position: fixed;
+    right: -300px; /* Initially hidden off-screen */
+    top: 20px;
+    width: 500px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    visibility: hidden; /* Initially hidden */
+    opacity: 0;
+}
+#web:target {
+    right: 20px; /* Slide in from the right */
+    visibility: visible;
+    opacity: 1;
+}
+.close-card {
+    display: block;
+    margin-bottom: 10px;
+    text-align: right;
+    color: #333;
+    text-decoration: none;
+}
+.close-card:hover {
+    text-decoration: underline;
+}
+
 
