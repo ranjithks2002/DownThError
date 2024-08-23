@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="ICONS/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -12,11 +15,11 @@
 </head>
 <body>    
     <!-- header -->
-        <nav class="navbar  bg-danger rounded navbar-fixed-top"  >
+        <nav class="navbar  bg-danger rounded navbar-fixed-top "  >
             <div class="container-fluid" id="header">
             <nav class="navbar navbar-light">
-                <a class="navbar-brand" href="#">
-                <img src="logo .png" class="rounded" width="50" height="50" class="d-inline-block align-top" alt="logo" style="object-fit: c;">
+                <a class="navbar-brand matemasie-regular" href="#">
+                <img src="/images/logo .png" class="rounded" width="50" height="50" class="d-inline-block align-top " alt="logo" style="object-fit: c;">
                 DOWNTHERROR</a>
             </nav>
               <form class="d-flex" role="search">
@@ -28,34 +31,34 @@
     <!-- Header End -->
     <!-- Navigation Bar -->
      <div class="bg-light rounded">
-    <nav class="navbar navbar-expand-lg navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-inverse navbar-fixed-top ">
+      <div class="container-fluid ">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item btn-outline-warning rounded">
-              <a class="nav-link" aria-current="page" href="#header">Home</a>
+              <a class="nav-link text-dark" aria-current="page" href="#header">Home</a>
             </li>
             <li class="nav-item btn-outline-warning rounded">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link text-dark" href="#about">About</a>
             </li>
             <li class="nav-item btn-outline-warning rounded">
-              <a class="nav-link" href="#service">Services</a>
+              <a class="nav-link text-dark" href="#service">Services</a>
             </li>
             <li class="nav-item btn-outline-warning rounded">
-              <a class="nav-link" href="#product">Product</a>
+              <a class="nav-link text-dark" href="#product">Product</a>
             </li>
             <li class="nav-item btn-outline-warning rounded">
-              <a class="nav-link" href="#careers">Career</a>
+              <a class="nav-link text-dark" href="#careers">Career</a>
             </li>
             <li class="nav-item btn-outline-warning rounded">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link text-dark" href="#contact">Contact</a>
             </li>
           </ul>
-          <button class="btn btn-outline-success rounded me-2" type="submit">Signup</button>
-          <button class="btn btn-outline-success rounded" type="submit">Login</button>
+          <button class="btn btn-outline-success rounded me-2" onclick="document.location='signup.html'" type="submit">Signup</button>
+          <button class="btn btn-outline-success rounded" onclick="document.location='login.html'" type="submit">Login</button>
         </div>
       </div>
     </nav>
@@ -92,56 +95,136 @@
      <!-- About page -->
       <div class="container-fluid bg-danger text-white rounded" id="about">
         <div class="row">
-          <div class="col-lg-7">
-            <h3>About</h3>
+          <div class="col-lg-9 mt-4">
+            <h3 class="matemasie-regular">About</h3>
             <p class="ms-5" style="text-align: justify; ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam dicta amet maxime voluptatibus temporibus reprehenderit eaque distinctio.
                Quas quaerat dolor deserunt ratione culpa, laborum quae. Magni repudiandae adipisci nihil quae? Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                Quasi accusamus, tempore, dolorem, illum tempora optio exercitationem consequatur quisquam aliquid deserunt sit nobis quod eius. Similique vero molestias ex quisquam quia!</p>
           </div>
-          <div class="col-lg-5 m-0 p-0 d-flex justify-content-center">
+          <div class="col-lg-3 m-0 p-0 d-flex justify-content-end p-2 ">
             <img src="about.jpg" class="rounded" width="200px" height="250px" alt="About">
           </div>
         </div> 
       </div>
       <!-- About End -->
-      <!-- Services -->     
-       <div class="container-fluid rounded" id="service">   
-        <h4>Services</h4>    
-       <div class="d-flex" id="services" style="margin-left:100px ;">
-      <div class="card m-4" style="width: 18rem;">
-        <img src="frontend.jpg" class="card-img-top" width="200px" height="200px" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Front End</h5>
-          <a href="#" class="btn btn-primary">Enquire Now</a>
+      <!-- Services -->      
+     <div class="container-fluid">
+      <h4 class="mt-4 matemasie-regular" id="service">Services</h4>
+     <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="row">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="col m-5" id="cardmargin">
+              <div class="card d-inline-block" style="width: 18rem;">
+                  <img src="frontend.jpg" width="200px" height="200px" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">FrontEnd-Development</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Enquire</a>
+                  </div>
+                </div>
+                <div class="card d-inline-block" style="width: 18rem;">
+                  <img src="backend.jpg"  width="200px" height="200px" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">BackEnd-Development</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Enquire</a>
+                  </div>
+                </div>
+                <div class="card d-inline-block" style="width: 18rem;">
+                  <img src="Java-Full-Stack.png" width="200px" height="200px" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Java-Full-Stack</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Enquire</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col m-5" id="cardmargin">
+              <div class="card d-inline-block" style="width: 18rem; ">
+                  <img src="frontend.jpg" width="200px" height="200px" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card d-inline-block" style="width: 18rem;">
+                  <img src="Java-Full-Stack.png" width="200px" height="200px" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card d-inline-block" style="width: 18rem;">
+                  <img src="backend.jpg"  width="200px" height="200px" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item" id="cardmargin">
+          <div class="col m-5">
+              <div class="card d-inline-block" style="width: 18rem;">
+                  <img src="frontend.jpg"  width="200px" height="200px" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card d-inline-block" style="width: 18rem;">
+                  <img src="Java-Full-Stack.png" width="200px" height="200px" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card d-inline-block" style="width: 18rem;">
+                  <img src="backend.jpg" width="200px" height="200px" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+            </div>
         </div>
       </div>
-      <div class="card m-4"  style="width: 18rem;">
-        <img src="backend.jpg" class="card-img-top" width="200px" height="200px" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Back End</h5>
-          <a href="#" class="btn btn-primary">Enquire Now</a>
-        </div>
-      </div>
-      <div class="card m-4" style="width: 18rem;">
-        <img src="Java-Full-Stack.png" class="card-img-top" width="200px" height="200px" alt="...">
-        <div class="card-body" >
-          <h5 class="card-title">Java-fullstack</h5>
-          <a href="#" class="btn btn-primary">Enquire Now</a>
-        </div>
-      </div>
-      </div>
-     </div>
+  </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
       <!-- Services End -->
       <!-- Product -->
-       <div class="container-fluid bg-danger rounded" width="50%" id="product">
-        <h4>Our Products</h4>
+       <div class="container-fluid bg-danger text-white rounded pt-4 pb-4" width="50%" id="product">
+        <h4 class="matemasie-regular">Our Products</h4>
         <h6>Products we offer for our customers</h6>
-        <div class="list-group w-50 ms-5">        
-          <a href="#frontend" class="list-group-item list-group-item-action list-group-item-primary" data-bs-toggle="tooltip" data-bs-placement="right" title="Front End">
+      <div class="list-group  w-50 ms-5">        
+          <a href="#frontend" class="list-group-item list-group-item-action  list-group-item-primary" data-bs-toggle="tooltip" data-bs-placement="right" title="Front End">
             FrontEnd-Development</button></a>
-            <div class="card container-fluid" id="frontend">
+            <div class="card container-fluid " id="frontend">
               <a href="#product" class="close-card">Close</a>
-              <div class="card-body">
+              <div class="card-body bg-dark">
                 <h5 class="card-title">FrontEnd-Development</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 <a href="#" class="btn btn-primary">View</a>
@@ -151,7 +234,7 @@
             BackEnd-Development</button></a>
             <div class="card container-fluid" id="backend">
               <a href="#product" class="close-card">Close</a>
-              <div class="card-body">
+              <div class="card-body bg-dark">
                 <h5 class="card-title">BackEnd-Development</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 <a href="#" class="btn btn-primary">View</a>
@@ -161,7 +244,7 @@
             Web Design</button></a>
             <div class="card" id="web">
               <a href="#product" class="close-card">Close</a>
-              <div class="card-body">
+              <div class="card-body bg-dark">
                 <h5 class="card-title">Web Design</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 <a href="#" class="btn btn-primary">View</a>
@@ -171,7 +254,7 @@
             Mobile Applications</button></a>
             <div class="card" id="mobile">
               <a href="#product" class="close-card">Close</a>
-              <div class="card-body">
+              <div class="card-body bg-dark">
                 <h5 class="card-title">Mobile Application</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 <a href="#" class="btn btn-primary">View</a>
@@ -181,7 +264,7 @@
             IoS Applications</button></a>
             <div class="card" id="ios">
               <a href="#product" class="close-card">Close</a>
-              <div class="card-body">
+              <div class="card-body bg-dark">
                 <h5 class="card-title">IoS Application</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 <a href="#" class="btn btn-primary">View</a>
@@ -191,12 +274,12 @@
        </div>
        <!-- Product End -->
         <!-- Review -->
-         <div class="container-fluid rounded">
-          <h4>Our Customers</h4>
-          <div class="container-fluid">
-          <div class="d-flex m-5" id="review">
+         <div class="container-fluid rounded mt-4">
+          <h4 class="matemasie-regular">Our Customers</h4>
+          <div class="container-fluid" id="review">
+          <div class="d-flex m-5 justify-content-center" id="review">
           <div class="card me-5 mt-3" style="width: 18rem;" >
-            <img src="review1.jpg" class="card-img-top"  width="200px" height="200px" alt="reviewer1">
+            <img src="review1.jpg" class="card-img-top "  width="200px" height="200px" alt="reviewer1">
             <div class="card-body">
               <p class="card-text" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga error sed iste laborum repellat pariatur excepturi nostrum quo debitis culpa. Ab commodi ipsa, facilis assumenda earum quaerat consectetur voluptates? Corrupti!.</p>
             </div>
@@ -218,8 +301,8 @@
         </div>
         <!-- Review End -->
          <!-- Career -->
-        <div class="container-fluid bg-danger text-white rounded" id="careers">
-          <h4>Careers</h4>
+        <div class="container-fluid bg-danger text-white rounded pt-4 pb-4" id="careers">
+          <h4 class="matemasie-regular">Careers</h4>
           <div class="container d-flex" id="career">
           <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" style="margin-left: 200px; margin-top: 25px;" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -272,16 +355,16 @@
         <!-- Career End -->
         <!-- Offers -->
           <div class="container-fluid rounded">
-            <h4>Offers</h4>
+            <h4 class="mt-4 matemasie-regular">Offers</h4>
             <div class="imagebox" id="offer">
-            <img src="broucher.jpg"  alt="Offersbroucher" class="img-fluid">
+            <img src="broucher.jpg" alt="Offersbroucher" class="img-fluid">
             </div>
           </div>
         <!-- Offer end -->
         <!-- News Letter -->
-         <div class="container-fluid bg-danger rounded">
-          <h4>News Letters</h4>
-          <div class="accordion" id="accordionPanelsStayOpenExample">
+         <div class="container-fluid text-white bg-danger rounded pt-2 pb-4">
+          <h4 class="mt-4 matemasie-regular">News Letters</h4>
+          <div class="accordion mt-4" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
@@ -322,8 +405,8 @@
          </div>
         <!-- Newsletter End -->
         <!-- Contact -->
-         <div class="container-fluid rounded" id="contact">
-          <h4>Contact</h4>
+         <div class="container-fluid rounded pt-4" id="contact">
+          <h4 class="matemasie-regular">Contact</h4>
           <div class="row">
           <div class="col-lg-7">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62615.13470161949!2d78.12448485399007!3d11.228571361305098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babce5e3f22014f%3A0xa0ab89ef32c34a77!2sNamakkal%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1723883545717!5m2!1sen!2sin" class="img-fluid" width="600" height="450" style="border:0;" allowfullscreen="1" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -352,8 +435,8 @@
         </div>
         <!-- Contact End -->
          <!-- Queries -->
-          <div class="container-fluid bg-danger text-white rounded">
-            <h4>Describe Your Thoughts</h4>
+          <div class="container-fluid bg-danger text-white rounded pb-4">
+            <h4 class="pt-4 matemasie-regular">Describe Your Thoughts</h4>
             <form class="row g-3 needs-validation" novalidate>
               <div class="col-md-4">
                 <label for="validationCustom01" class="form-label">First name</label>
